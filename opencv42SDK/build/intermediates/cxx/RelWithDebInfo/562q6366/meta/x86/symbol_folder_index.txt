@@ -1,0 +1,1 @@
+C:\Users\lanad\AndroidStudioProjects\SinaisTalkToMe\opencv42SDK\build\intermediates\cxx\RelWithDebInfo\562q6366\obj\x86
