@@ -27,12 +27,12 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static String LOGTAG = "OpenCv_Log";
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
     private ImageView imageView;
-    private Button button;
+    private ImageButton button;
     TextView textVoice;
     ImageButton voiceBtn;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
         textVoice = findViewById(R.id.textVoice);
         voiceBtn = findViewById(R.id.voiceBtn);
 
-        Log.d("TAG", "OpenCv Loading Status ${OpenCVLoader.initDebug()}");
+        if (OpenCVLoader.initDebug()){
+            Log.d(LOGTAG, "OpenCv inicializado");
+        }
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

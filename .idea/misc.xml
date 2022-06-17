@@ -3,8 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/ic_baseline_attach_file_24.xml" value="0.184" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/ic_baseline_audio_file_24.xml" value="0.184" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.184" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/ic_baseline_insert_drive_file_24.xml" value="0.184" />
         <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.177" />
-        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/rectangle.xml" value="0.1505" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/drawable/transparent_backgroung.xml" value="0.184" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/font/roboto.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/fragment_camera.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/fragment_login.xml" value="0.21" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/fragment_login_page.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/login_page.xml" value="0.13" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/opencv.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/layout/opencv_camera.xml" value="0.19701086956521738" />
         <entry key="..\:/Users/lanad/AndroidStudioProjects/SinaisTalkToMe/app/src/main/res/menu/idioma.xml" value="0.22447916666666667" />
       </map>
     </option>

@@ -31,7 +31,7 @@
         <ImageView
             android:id="@+id/capturedImage"
             android:layout_width="match_parent"
-            android:layout_height="520dp"
+            android:layout_height="430dp"
             android:layout_gravity="center" />
 
     </RelativeLayout>
@@ -63,9 +63,10 @@
             android:gravity="center"
             android:src="@drawable/ic_baseline_mic_24" />
 
+
     </RelativeLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/openCamera"
         android:layout_marginTop="5dp"
         android:paddingBottom="10dp"
@@ -75,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue_green"
-        android:text="Open Camera" />
+        android:src="@drawable/ic_baseline_camera_alt_24" />
 
 
 </LinearLayout>
