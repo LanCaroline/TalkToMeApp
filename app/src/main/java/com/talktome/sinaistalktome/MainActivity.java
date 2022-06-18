@@ -19,6 +19,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+
 import org.opencv.android.OpenCVLoader;
 
 import java.nio.charset.StandardCharsets;
@@ -33,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton button;
     TextView textVoice;
     ImageButton voiceBtn;
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
+    ImageButton signOutBtn;
+    TextView name, email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +53,31 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.openCamera);
         textVoice = findViewById(R.id.textVoice);
         voiceBtn = findViewById(R.id.voiceBtn);
+
+        // Conta do E-mail logado
+
+//        name = findViewById(R.id.name);
+//        email = findViewById(R.id.email);
+        signOutBtn = findViewById(R.id.signOutBtn);
+
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        gsc = GoogleSignIn.getClient(this, gso);
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        if(acct!=null){
+            String personName = acct.getDisplayName();
+            String personEmail = acct.getEmail();
+//            name.setText(personName);
+//            email.setText(personEmail);
+        }
+
+        // Sair da conta logada
+        signOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
 
         if (OpenCVLoader.initDebug()){
             Log.d(LOGTAG, "OpenCv inicializado");
@@ -62,6 +98,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    //Sair da conta
+    void signOut(){
+        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(Task<Void> task) {
+                startActivity(new Intent(MainActivity.this, LoginPage.class));
+                finish();
+            }
+        });
     }
 
     private void speak(){
