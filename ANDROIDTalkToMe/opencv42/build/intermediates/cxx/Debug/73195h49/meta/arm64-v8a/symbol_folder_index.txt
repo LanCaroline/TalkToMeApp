@@ -1,0 +1,1 @@
+C:\Users\lanad\AndroidStudioProjects\TalkToMeApp\opencv42\build\intermediates\cxx\Debug\73195h49\obj\arm64-v8a

@@ -1,0 +1,1 @@
+C:\Users\lanad\AndroidStudioProjects\ANDROIDTalkToMe\opencv42\libcxx_helper\CMakeLists.txt

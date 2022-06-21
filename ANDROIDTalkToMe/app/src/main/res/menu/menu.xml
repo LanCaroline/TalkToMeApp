@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_translate"
+        android:title="Traduzir"
+        android:icon="@drawable/ic_baseline_translate_24" />
+
+    <item android:id="@+id/nav_video"
+        android:title="Vídeo"
+        android:icon="@drawable/ic_baseline_videocam_24" />
+
+    <item android:id="@+id/nav_camera"
+        android:title="Câmera"
+        android:icon="@drawable/ic_baseline_camera_alt_24" />
+
+    <item android:id="@+id/nav_folder"
+        android:title="Compartilhar"
+        android:icon="@drawable/ic_baseline_folder_24" />
+</menu>
